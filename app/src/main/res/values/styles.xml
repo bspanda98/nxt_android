@@ -1,0 +1,15 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="NxtTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/NxtActionBar</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- ActionBar styles -->
+    <style name="NxtActionBar"
+        parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/blue_dark</item>
+    </style>
+
+</resources>

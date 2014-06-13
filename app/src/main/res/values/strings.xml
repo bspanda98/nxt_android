@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NxtQQ</string>
+    <string name="title_section1">Online Wallet</string>
+    <string name="title_section2">Send Money</string>
+    <string name="title_section3">Messages</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="action_settings">Settings</string>
+
+
+    <color name="headline">#404040</color>
+    <color name="text_normal">#919191</color>
+    <color name="text_darker">#343434</color>
+    <color name="background_dark_grey">#919191</color>
+    <color name="background_light_grey">#e6e6e8</color>
+
+    <color name="gold">#cc9900</color>
+    <color name="gold_light">#eed96d</color>
+    <color name="blue_light">#0088b7</color>
+    <color name="blue_dark">#002e43</color>
+    <color name="logo_blue">#008fbb</color>
+    <color name="logo_dark">#003c5a</color>
+    <color name="white">#ffffff</color>
+
+</resources>
