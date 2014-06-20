@@ -1,4 +1,4 @@
-package nxt.nxtqq;
+package com.nxtqq;
 
 import android.app.Activity;
 import android.app.Fragment;
@@ -10,8 +10,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 
-import nxt.nxtqq.Main;
-import nxt.nxtqq.R;
+import com.nxtqq.Main;
+import com.nxtqq.R;
 
 public class AccountFragment extends Fragment {
     /**
