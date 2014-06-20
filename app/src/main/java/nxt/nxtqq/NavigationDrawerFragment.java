@@ -62,7 +62,7 @@ public class NavigationDrawerFragment extends Fragment {
     }
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         // Read in the flag indicating whether or not the user has demonstrated awareness of the
