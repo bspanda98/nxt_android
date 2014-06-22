@@ -8,6 +8,9 @@ import android.preference.PreferenceManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TableLayout;
+import android.widget.TableRow;
+import android.widget.TextView;
 
 
 import com.nxtqq.Main;
@@ -32,11 +35,41 @@ public class AccountFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_account, container, false);
+        populateTransactions(rootView);
         return rootView;
     }
 
     @Override
     public void onAttach(Activity activity) {
         super.onAttach(activity);
+    }
+
+
+    private void populateTransactions(View rootView){
+        TableLayout transactions = (TableLayout) rootView.findViewById(R.id.transactions_table);
+        //dummy data
+        TableRow row1 = new TableRow(getActivity());
+        TableRow row2 = new TableRow(getActivity());
+        TableRow row3 = new TableRow(getActivity());
+        TableRow row4 = new TableRow(getActivity());
+
+        TextView account1 = new TextView(getActivity());
+        account1.setText("NXT-MRCC-2YLS-8M54-3CMAJ");
+        TextView account2 = new TextView(getActivity());
+        account2.setText("NXT-MRCC-2YLS-8M54-3CMAJ");
+        TextView account3 = new TextView(getActivity());
+        account3.setText("NXT-MRCC-2YLS-8M54-3CMAJ");
+        TextView account4 = new TextView(getActivity());
+        account4.setText("NXT-MRCC-2YLS-8M54-3CMAJ");
+
+        row1.addView(account1);
+        row2.addView(account2);
+        row3.addView(account3);
+        row4.addView(account4);
+
+        transactions.addView(row1);
+        transactions.addView(row2);
+        transactions.addView(row3);
+        transactions.addView(row4);
     }
 }

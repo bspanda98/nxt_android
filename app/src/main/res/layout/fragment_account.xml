@@ -57,11 +57,12 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" >
-<!--
-        <fragment android:name="com.nxtqq.TransactionsFragment"
-            android:id="@+id/transactions"
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/transactions_table"
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent" />
--->
+            android:layout_height="fill_parent">
+        </TableLayout>
     </ScrollView>
 </RelativeLayout>
