@@ -1,4 +1,4 @@
-package com.nxtqq;
+package com.nxt;
 
 
 import android.app.Activity;
@@ -90,7 +90,7 @@ public class NavigationDrawerFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
         mDrawerListView = (ListView) inflater.inflate(
-                com.nxtqq.R.layout.fragment_navigation_drawer, container, false);
+                com.nxt.R.layout.fragment_navigation_drawer, container, false);
         mDrawerListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -102,9 +102,9 @@ public class NavigationDrawerFragment extends Fragment {
                 android.R.layout.simple_list_item_activated_1,
                 android.R.id.text1,
                 new String[]{
-                        getString(com.nxtqq.R.string.title_section1),
-                        getString(com.nxtqq.R.string.title_section2),
-                        getString(com.nxtqq.R.string.title_section3),
+                        getString(com.nxt.R.string.title_section1),
+                        getString(com.nxt.R.string.title_section2),
+                        getString(com.nxt.R.string.title_section3),
                 }));
         mDrawerListView.setItemChecked(mCurrentSelectedPosition, true);
         return mDrawerListView;
@@ -125,7 +125,7 @@ public class NavigationDrawerFragment extends Fragment {
         mDrawerLayout = drawerLayout;
 
         // set a custom shadow that overlays the main content when the drawer opens
-        mDrawerLayout.setDrawerShadow(com.nxtqq.R.drawable.drawer_shadow, GravityCompat.START);
+        mDrawerLayout.setDrawerShadow(com.nxt.R.drawable.drawer_shadow, GravityCompat.START);
         // set up the drawer's list view with items and click listener
 
         ActionBar actionBar = getActionBar();
@@ -137,9 +137,9 @@ public class NavigationDrawerFragment extends Fragment {
         mDrawerToggle = new ActionBarDrawerToggle(
                 getActivity(),                    /* host Activity */
                 mDrawerLayout,                    /* DrawerLayout object */
-                com.nxtqq.R.drawable.ic_drawer,             /* nav drawer image to replace 'Up' caret */
-                com.nxtqq.R.string.navigation_drawer_open,  /* "open drawer" description for accessibility */
-                com.nxtqq.R.string.navigation_drawer_close  /* "close drawer" description for accessibility */
+                com.nxt.R.drawable.ic_drawer,             /* nav drawer image to replace 'Up' caret */
+                com.nxt.R.string.navigation_drawer_open,  /* "open drawer" description for accessibility */
+                com.nxt.R.string.navigation_drawer_close  /* "close drawer" description for accessibility */
         ) {
             @Override
             public void onDrawerClosed(View drawerView) {
@@ -235,7 +235,7 @@ public class NavigationDrawerFragment extends Fragment {
         // If the drawer is open, show the global app actions in the action bar. See also
         // showGlobalContextActionBar, which controls the top-left area of the action bar.
         if (mDrawerLayout != null && isDrawerOpen()) {
-            inflater.inflate(com.nxtqq.R.menu.global, menu);
+            inflater.inflate(com.nxt.R.menu.global, menu);
             showGlobalContextActionBar();
         }
         super.onCreateOptionsMenu(menu, inflater);
@@ -247,7 +247,7 @@ public class NavigationDrawerFragment extends Fragment {
             return true;
         }
 
-        if (item.getItemId() == com.nxtqq.R.id.action_example) {
+        if (item.getItemId() == com.nxt.R.id.action_example) {
             Toast.makeText(getActivity(), "Example action.", Toast.LENGTH_SHORT).show();
             return true;
         }
@@ -263,7 +263,7 @@ public class NavigationDrawerFragment extends Fragment {
         ActionBar actionBar = getActionBar();
         actionBar.setDisplayShowTitleEnabled(true);
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_STANDARD);
-        actionBar.setTitle(com.nxtqq.R.string.app_name);
+        actionBar.setTitle(com.nxt.R.string.app_name);
     }
 
     private ActionBar getActionBar() {

@@ -1,4 +1,4 @@
-package com.nxtqq;
+package com.nxt;
 
 import android.app.Activity;
 
