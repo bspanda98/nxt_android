@@ -22,6 +22,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.nxt.R;
+
 /**
  * Fragment used for managing interactions for and presentation of a navigation drawer.
  * See the <a href="https://developer.android.com/design/patterns/navigation-drawer.html#Interaction">
@@ -102,9 +104,12 @@ public class NavigationDrawerFragment extends Fragment {
                 android.R.layout.simple_list_item_activated_1,
                 android.R.id.text1,
                 new String[]{
-                        getString(com.nxt.R.string.title_section1),
-                        getString(com.nxt.R.string.title_section2),
-                        getString(com.nxt.R.string.title_section3),
+                        getString(R.string.title_nav_wallet),
+                        getString(R.string.title_nav_send_money),
+                        getString(R.string.title_nav_receive_money),
+                        getString(R.string.title_nav_transactions),
+                        getString(R.string.title_nav_asset_exchange),
+                        getString(R.string.title_nav_mgw),
                 }));
         mDrawerListView.setItemChecked(mCurrentSelectedPosition, true);
         return mDrawerListView;

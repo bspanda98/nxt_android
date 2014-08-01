@@ -3,6 +3,7 @@ package org.nxt.client;
 import android.app.Activity;
 
 import android.app.ActionBar;
+import android.app.Fragment;
 import android.app.FragmentManager;
 import android.os.Bundle;
 import android.view.Menu;
@@ -20,6 +21,11 @@ public class Main extends Activity
      */
     private NavigationDrawerFragment mNavigationDrawerFragment;
     private AccountFragment mAccountFragment = null;
+    private TransactionsFragment mTransactionsFragment = null;
+    private SendMoneyFragment mSendMoneyFragment = null;
+    private ReceiveMoneyFragment mReceiveMoneyFragment = null;
+    private AssetExchangeFragment mAssetExchangeFragment = null;
+    private MultiGatewayFragment mMultiGatewayFragment = null;
 
     /**
      * Used to store the last screen title. For use in {@link #restoreActionBar()}.
@@ -43,29 +49,69 @@ public class Main extends Activity
 
     @Override
     public void onNavigationDrawerItemSelected(int position) {
+        FragmentManager fragmentManager = getFragmentManager();
+
+        Fragment selectedFragment=null;
         //create instances of fragments as needed.
-        if (position == 0){
-            if (mAccountFragment == null){
+        if (position == 0) {
+            if (mAccountFragment == null) {
                 mAccountFragment = new AccountFragment();
             }
+            selectedFragment=mAccountFragment;
+        }else if (position == 1){
+            if (mTransactionsFragment == null){
+                mTransactionsFragment = new TransactionsFragment();
+            }
+            selectedFragment=mTransactionsFragment;
+        }else if (position == 2) {
+            if (mSendMoneyFragment == null) {
+                mSendMoneyFragment = new SendMoneyFragment();
+            }
+            selectedFragment=mSendMoneyFragment;
+        }else if (position == 3){
+            if (mReceiveMoneyFragment == null){
+                mReceiveMoneyFragment = new ReceiveMoneyFragment();
+            }
+            selectedFragment=mReceiveMoneyFragment;
+        }else if (position == 4){
+            if (mAssetExchangeFragment == null){
+                mAssetExchangeFragment = new AssetExchangeFragment();
+            }
+            selectedFragment=mAssetExchangeFragment;
+        }else if (position == 5){
+            if (mMultiGatewayFragment == null){
+                mMultiGatewayFragment = new MultiGatewayFragment();
+            }
+            selectedFragment=mMultiGatewayFragment;
         }
         // update the main content by replacing fragments
-        FragmentManager fragmentManager = getFragmentManager();
+
+        if (selectedFragment == null) return;
+
         fragmentManager.beginTransaction()
-                .replace(R.id.container, mAccountFragment)
+                .replace(R.id.container, selectedFragment)
                 .commit();
     }
 
     public void onSectionAttached(int number) {
         switch (number) {
+            case 0:
+                mTitle = getString(R.string.title_nav_wallet);
+                break;
             case 1:
-                mTitle = getString(R.string.title_section1);
+                mTitle = getString(R.string.title_nav_transactions);
                 break;
             case 2:
-                mTitle = getString(R.string.title_section2);
+                mTitle = getString(R.string.title_nav_send_money);
                 break;
             case 3:
-                mTitle = getString(R.string.title_section3);
+                mTitle = getString(R.string.title_nav_receive_money);
+                break;
+            case 4:
+                mTitle = getString(R.string.title_nav_asset_exchange);
+                break;
+            case 5:
+                mTitle = getString(R.string.title_nav_mgw);
                 break;
         }
     }

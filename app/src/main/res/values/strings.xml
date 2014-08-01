@@ -2,9 +2,12 @@
 <resources>
 
     <string name="app_name">Nxt</string>
-    <string name="title_section1">Online Wallet</string>
-    <string name="title_section2">Send Money</string>
-    <string name="title_section3">Messages</string>
+    <string name="title_nav_wallet">Online Wallet</string>
+    <string name="title_nav_send_money">Send Money</string>
+    <string name="title_nav_receive_money">Receive Money</string>
+    <string name="title_nav_transactions">Send Money</string>
+    <string name="title_nav_asset_exchange">Asset Exchange</string>
+    <string name="title_nav_mgw">Multigateway</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="action_example">Example action</string>
