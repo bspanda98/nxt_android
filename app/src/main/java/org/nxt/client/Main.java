@@ -1,4 +1,4 @@
-package com.nxt;
+package org.nxt.client;
 
 import android.app.Activity;
 
@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.support.v4.widget.DrawerLayout;
+
+import com.nxt.R;
 
 
 public class Main extends Activity

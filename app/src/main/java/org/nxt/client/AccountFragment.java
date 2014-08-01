@@ -1,4 +1,4 @@
-package com.nxt;
+package org.nxt.client;
 
 import android.app.Activity;
 import android.app.Fragment;
@@ -9,6 +9,8 @@ import android.view.ViewGroup;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
+
+import com.nxt.R;
 
 public class AccountFragment extends Fragment {
     /**

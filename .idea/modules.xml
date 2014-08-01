@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Nxt.iml" filepath="$PROJECT_DIR$/Nxt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NxtQQ.iml" filepath="$PROJECT_DIR$/NxtQQ.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
