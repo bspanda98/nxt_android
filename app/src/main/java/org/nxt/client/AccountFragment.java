@@ -10,8 +10,6 @@ import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
 
-import com.nxt.R;
-
 public class AccountFragment extends Fragment {
     /**
      * The fragment argument representing the section number for this

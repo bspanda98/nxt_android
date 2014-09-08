@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/Nxt.iml" filepath="$PROJECT_DIR$/Nxt.iml" />
       <module fileurl="file://$PROJECT_DIR$/NxtQQ.iml" filepath="$PROJECT_DIR$/NxtQQ.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nxt-android.iml" filepath="$PROJECT_DIR$/nxt-android.iml" />
     </modules>
   </component>
 </project>
