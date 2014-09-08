@@ -25,7 +25,7 @@ import java.util.Map;
 
 public class NxtClientGateway {
 
-    private static final String TAG = "RaveServerGateway";
+    private static final String TAG = "NxtClientGateway";
 
     private static final String USER_AGENT_PATTERN = "NXTClient/%s;Android/%s;Device/%s;Manufacturer/%s;";
 
